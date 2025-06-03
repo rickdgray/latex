@@ -1,0 +1,259 @@
+\begin{filecontents*}[overwrite]{\jobname.bib}
+@xdata{cc6,
+courtname={CIRCUIT COURT OF ILLINOIS},
+courtrank={Sixth Judicial Circuit},
+courtjurisdiction={Champaign County},
+}
+@xdata{lsk,
+clerkname={LSK},
+clerkaddressa={address line 1},
+clerkaddressb={address line 2},
+}
+
+@misc{A01,
+    petitioner = {D Ducke and M Mousse},
+    sepdate = {2020-09-16},
+    xdata = {cc6,lsk},
+    template = {standardu},
+    reasons = {irrdiff, imprec, livsep, waitwo, divprop, wairig, volact,  ackatt,},
+}
+@misc{A02,
+    petitioner = {Jack Spratt and Jill Spratt},
+    xdata = {cc6,lsk},
+    sepdate = {1520-02-14},
+    reasons = {irrdiff, imprec, livsep, waitwo, divprop, wairig, volact,  ackatt,},
+}
+@misc{item1,
+itemdescription={item 1 description},
+}
+@misc{item2,
+itemdescription={item 2 description},
+}
+
+@misc{irrdiff,
+itemdescription={That irreconcilable differences have caused the irretrievable breakdown of their marriage.},
+}
+@misc{imprec,
+itemdescription={That all efforts at reconciliation of the differences between the parties have heretofore failed or future attempts at reconciliation would be impractical and not in the best interest of the parties.},
+}
+@misc{livsep,
+itemdescription={That the parties have lived separate and apart for a continuous period of more than six (6) months prior to the date of this Affidavit, having separated on or about \usebox{\sbdate}, and have remained living separate for all times thereafter.},
+}
+@misc{waitwo,
+itemdescription={\vspace{-\itemsep}\vspace{-\baselineskip}\begin{enumerate}[topsep=0pt]\item That each of the parties hereto expressly waive the requirement that the continuous period of living separate and apart be in excess of two (2) years in order for the court to enter a Dissolution of  Marriage based upon irreconcilable differences which have cause the irretrievable breakdown of their marriage.\item  Each of the parties further stipulates that the requirement shall be reduced to a period of only in excess of six (6) months rather than in excess of two (2) years as provided by Section 401(a)(2) of the Illinois Marriage and Dissolution of Marriage Act. \end{enumerate}},
+}
+@misc{divprop,
+itemdescription={That the marital property amd debt belonging to the parties has been divided according to the terms of the written agreement of the parties filed with the Joint Petition for Simplified Dissolution of Marriage    in this cause, and that the parties have executed all documents required to carry out the agreement.},
+}
+@misc{wairig,
+itemdescription={That the parties waive any right either may have to a bifurcated hearing in this cause.},
+}
+@misc{volact,
+itemdescription={That each of the parties represents that the signing of the Affidavit is their individual, sole, and voluntary act.},
+}
+@misc{ackatt,
+itemdescription={That each of the parties accknowledges that he/she has the right to consult with an attorney and wither done so or has freely chosen not so do so.},
+}
+\end{filecontents*}
+
+
+
+
+\begin{filecontents*}[overwrite]{courtform.dbx}
+\DeclareDatamodelEntryfields[misc]{%
+courtname,
+courtrank,
+courtjurisdiction,
+petitioner,
+reasons,
+clerkname,
+clerkaddressa,
+clerkaddressb,
+itemdescription,
+sepdate,
+}
+\DeclareDatamodelFields[type=list, datatype=name]{%
+petitioner,
+}
+\DeclareDatamodelFields[type=field, format=xsv, datatype=entrykey]{%
+reasons,
+}
+\DeclareDatamodelFields[type=field, datatype=literal]{%
+courtname,
+courtrank,
+courtjurisdiction,
+clerkname,
+clerkaddressa,
+clerkaddressb,
+itemdescription,
+}
+\DeclareDatamodelFields[type=field, datatype=date]{%
+sepdate,
+}
+\end{filecontents*}
+
+
+
+
+\documentclass[legal]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{cellspace}%for space under hlines in tables
+\setlength{\cellspacetoplimit}{0.5em}
+%\usepackage{xcolor}
+\usepackage[english]{babel}%for American date format for biblatex
+%
+\newsavebox{\sbdate}
+\newsavebox{\sbpeta}
+\newsavebox{\sbpetb}
+%
+%
+%for the frame
+\usepackage{tikz}
+%
+\usepackage[datamodel=courtform,
+sepdate=comp,
+dateabbrev=false]{biblatex}
+
+
+\addbibresource{\jobname.bib}
+
+\DeclareFieldFormat[misc]{itemdescription}{#1}
+
+\newcommand{\entry}[1]{
+    \item \entrydata{#1}{\printfield{itemdescription}}
+}
+
+\DeclareFieldFormat{reasons}{
+    \begin{enumerate}[topsep=0pt]
+        \forcsvfield{\entry}{reasons}
+    \end{enumerate}
+}
+
+
+\DefineBibliographyStrings{english}{%
+andothers = {\unspace},%remove et al. from first name, and the preceeding space
+}
+
+\DeclareFieldFormat{courtname}{\hfill\mkbibbold{#1}\hfill\ }
+\DeclareFieldFormat{courtrank}{\hfill\mkbibbold{#1}\hfill\ }
+\DeclareFieldFormat{courtjurisdiction}{\ \hfill\mkbibbold{#1}\hfill\ }
+
+
+
+\DeclareCiteCommand{\citeitem}%
+{}
+{\printfield{itemdescription}}
+{}
+{}
+
+\DeclareCiteCommand{\citeform}%
+{}
+{%
+%top right corner of frame border:
+\hfill \tikz[overlay,remember picture]\node[xshift=1.2em](ttr){};
+%the form:
+\bfseries
+\savebox{\sbdate}{\printsepdate}%for re-use
+\savebox{\sbpeta}{\printnames[][1-1]{petitioner}}%for re-use
+\savebox{\sbpetb}{\printnames[][2-2]{petitioner}}%for re-use
+\begin{center}\begin{tabular}{c}
+\printfield{courtname}\\%
+\\%
+\printfield{courtrank}\\%
+\printfield{courtjurisdiction}\\%
+\end{tabular}\end{center}
+
+\begin{tabular}{Sl}%S for extra vertical space
+IN RE: THE MARRIAGE OF:\\
+\\
+\usebox{\sbpeta}\\%
+\hline CO-PETITIONER\\%
+\\
+    \\
+\usebox{\sbpetb}\\%
+\hline CO-PETITIONER\\%
+\\
+\end{tabular}
+\begin{tabular}{l}
+\\
+\\
+\\%
+\\
+\\%
+and \\
+\\%
+\\
+\\%
+\end{tabular}
+\begin{tabular}{r}
+\mbox{\hspace{2em}}\\
+\\
+)\\%
+)\\
+)\\%
+)\\
+)\\%
+)\\
+)\\%
+\end{tabular}
+\begin{tabular}{c}
+\\
+\\
+\\%
+\\
+\\%
+\hspace{3em}Case No. \underline{\hspace{12em}} \\
+\\%
+\\
+\\%
+\end{tabular}
+
+\begin{center}\begin{tabular}{c}
+JOINT AFFIDDAVIT REGARDING SEPARATION OF THE PARTIES, DIVISION OF\\
+PROPERTY AND DEBT AND WAIVER OF BIFURCATED HEARING\\
+\end{tabular}\end{center}
+
+\mdseries
+Co-Petitioners, \usebox{\sbpeta}, and \usebox{\sbpetb}, being first sworn on their oaths, depose and state as follows:
+
+\printfield{reasons}
+\vfill
+\ \hspace{5em}
+\begin{tabular}{Sc}%with vertical space
+\hspace{40em}\\
+\hline (Co-Petitioner's Signature)
+\end{tabular}
+\hfill
+\begin{tabular}{Sc}
+\hspace{4em}\\
+\hline (Co-Petitioner's Signature)
+\end{tabular}\hspace{7em}
+
+%bottom left corner of frame border:
+\tikz[overlay,remember picture]\node[xshift=-2em](bbl){};
+
+\begin{center}\begin{tabular}{c}
+\printfield{clerkname}\\
+\printfield{clerkaddressa}\\
+\printfield{clerkaddressb}\\
+\end{tabular}\end{center}
+
+%draw the frame:
+\begin{tikzpicture}[overlay,remember picture]
+    \draw[black, thick] (bbl) rectangle (ttr);
+\end{tikzpicture}
+}%
+{}
+{}
+%========================
+
+\renewcommand\thepage{}% remove page number
+
+\begin{document}
+\nocite{irrdiff,imprec,livsep,waitwo,divprop,wairig,volact,ackatt}
+\citeform{A01}
+\newpage
+\citeform{A02}
+
+\end{document}

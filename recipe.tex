@@ -1,0 +1,44 @@
+\documentclass[11pt]{article}
+\usepackage[landscape]{geometry}
+\usepackage{cuisine}
+
+\renewcommand*{\recipetitlefont}{\large\bfseries\sffamily}
+\renewcommand*{\recipenumberfont}{\large\bfseries\sffamily}
+\renewcommand*{\recipequantityfont}{\sffamily\bfseries}
+\renewcommand*{\recipeunitfont}{\sffamily}
+\renewcommand*{\recipeingredientfont}{\sffamily}
+\renewcommand*{\recipefreeformfont}{\itshape}
+
+\begin{document}
+
+    \begin{recipe}[Watermelon Salad]{Watermelon Salad}{Serves 4-6}{20 minutes}
+    \freeform A bright, festive watermelon salad that's sweet and tart and has a spicy kick.
+
+    \ingredient[2]{}{scallions}
+    \ingredient[2]{}{serrano peppers}
+    \ingredient[\fr13]{cup}{fresh squeezed lime juice}
+
+    Chop and slice the bottoms of the scallions. Chop the greens and save for later. Split, deseed and chop the serrano peppers. Mix the scallions, serrano peppers, and lime juice to create a dressing. Let sit and meld while cutting melon.
+
+    \ingredient[1]{large}{watermelon}
+
+    Cut the melon into 1.5 inch cubes.
+
+    \ingredient[1-2]{tbsp}{sugar}
+    \ingredient[\fr34]{tsp}{salt}
+
+    Taste the melon for sweetness: if watermelon is sweet, add 1 tbsp of sugar to the dressing. If not, add 2 tbsp instead. Add salt to the dressing.
+
+    \newstep
+    Toss melon chunks in the dressing.
+
+    \ingredient[\fr12]{cup}{crumbled cotija cheese}
+    \ingredient[\fr14]{cup}{chopped, salted, roasted pepitas}
+    \ingredient[\fr14]{cup}{cilantro}
+
+    Add to salad the cotija cheese, pepitas, cilantro, and chopped scallion greens from earlier.
+
+    \freeform\hrulefill
+    \end{recipe}
+
+\end{document}

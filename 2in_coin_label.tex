@@ -1,0 +1,38 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[letterpaper, top=0.625in, left=0.375in, bottom=0.675in, right=0.375in]{geometry}
+\usepackage[newdimens]{labels}
+\usepackage{luatexja-fontspec}
+
+\LabelCols=3
+\LabelRows=4
+
+\TopPageMargin=0.625in
+\LeftPageMargin=0.375in
+\BottomPageMargin=0.675in
+\RightPageMargin=0.375in
+
+\InterLabelColumn=0.875in
+\InterLabelRow=0.567in
+
+\LeftLabelBorder=0mm
+\RightLabelBorder=0mm
+\TopLabelBorder=0mm
+\BottomLabelBorder=0mm
+
+\begin{document}
+
+\genericlabel{
+    \begin{tabular}{ l }
+        Japanese 100 Yen Coin \\
+        JPY
+        ¥/円 100 \\
+        Year: 2005 \\
+        Mass: 4.8 g \\
+        Diameter: 22.6 mm \\
+        Cu 75\%, Ni 25\% \\
+        Design: Sakura blossoms \\
+        Y\# 287, JNDA\# 02-4 \\
+    \end{tabular}
+}
+
+\end{document}

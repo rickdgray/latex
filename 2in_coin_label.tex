@@ -1,7 +1,12 @@
 \documentclass[letterpaper,11pt]{article}
 \usepackage[letterpaper, top=0.625in, left=0.375in, bottom=0.675in, right=0.375in]{geometry}
 \usepackage[newdimens]{labels}
+
+% Enable Chinese, Japanese, and Korean characters
 \usepackage{luatexja-fontspec}
+
+% Show box around labels
+% \LabelGridtrue
 
 \LabelCols=3
 \LabelRows=4
@@ -14,25 +19,11 @@
 \InterLabelColumn=0.875in
 \InterLabelRow=0.567in
 
-\LeftLabelBorder=0mm
-\RightLabelBorder=0mm
-\TopLabelBorder=0mm
-\BottomLabelBorder=0mm
+\LeftLabelBorder=0.15in
+\RightLabelBorder=0.15in
+\TopLabelBorder=0.0in
+\BottomLabelBorder=0.0in
 
 \begin{document}
-
-\genericlabel{
-    \begin{tabular}{ l }
-        Japanese 100 Yen Coin \\
-        JPY
-        ¥/円 100 \\
-        Year: 2005 \\
-        Mass: 4.8 g \\
-        Diameter: 22.6 mm \\
-        Cu 75\%, Ni 25\% \\
-        Design: Sakura blossoms \\
-        Y\# 287, JNDA\# 02-4 \\
-    \end{tabular}
-}
-
+\labelfile{coin_labels.txt}
 \end{document}

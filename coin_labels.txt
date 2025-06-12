@@ -1,11 +1,3 @@
-100 Yen
-2005
-4.8 g
-\diameter22.6 mm
-Cu 75\%, Ni 25\%
-Sakura blossoms
-Y\# 287, JNDA\# 02-4
-
 1 Won
 1983
 0.729 g
@@ -54,13 +46,47 @@ Copper-nickel (Cu 75\%, Ni 25\%)
 Flying Manchurian crane
 KM\# 27, Schön\# 82
 
-Sangpyeong Tongbo
-Exonumia (replica)
-Nominal: 1 mun (문)
+1 mun (文/문)
 1678-1892
 4\pm1 g
-\diameter27 mm
+\diameter24\pm1 mm
 Copper, Bronze, or Brass
-Inscription: 常平通寶
+Sangpyeong Tongbo
 "Ever-Normal Circulating Coin"
+Exonumia
+
+Tongin Market Token
+(엽전형 토큰)
+2011-present
+6.5 g
+\diameter26 mm
+Brass
+Issued by Korea Tourism Organization
+Exonumia
+
+100 Won
+2005
+2.27 g
+\diameter27 mm
+Al 100\%
+National Coat of Arms
+Second Won (1959-2009)
+KM\# 427
+
+1 Chon (Socialist Visitor)
+1959
+0.62 g
+\diameter16 mm
+Al 100\%
+National Coat of Arms
+Second Won (1959-2009)
+KM\# 9
+
+100 Yen
+2005
+4.8 g
+\diameter22.6 mm
+Cu 75\%, Ni 25\%
+Sakura blossoms
+Y\# 287, JNDA\# 02-4
 

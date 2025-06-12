@@ -1,36 +1,66 @@
-Japanese 100 Yen Coin
-JPY/¥/円 100
-Year: 2005
-Mass: 4.8 g
-Diameter: 22.6 mm
+100 Yen
+2005
+4.8 g
+\diameter22.6 mm
 Cu 75\%, Ni 25\%
 Sakura blossoms
-Y\#287, JNDA\#02-4
+Y\# 287, JNDA\# 02-4
 
-Japanese 1 Yen Coin
-JPY/¥/円 1
-Year: 2005
-Mass: 4.8 g
-Diameter: 22.6 mm
-Cu 75\%, Ni 25\%
-Sakura blossoms
-Y\#287, JNDA\#02-4
+1 Won
+1983
+0.729 g
+\diameter17.2 mm
+Al 100\%
+Rose of Sharon
+KM\# 31, Schön\# 77
 
-Japanese 5 Yen Coin
-JPY/¥/円 5
-Year: 2005
-Mass: 4.8 g
-Diameter: 22.6 mm
-Cu 75\%, Ni 25\%
-Sakura blossoms
-Y\#287, JNDA\#02-4
+5 Won
+1983
+2.95 g
+\diameter20.4 mm
+Brass (Cu 65\%, Zn 35\%)
+Geobukseon, Turtle Ship
+KM\# 32, Schön\# 78
 
-Japanese 10 Yen Coin
-JPY/¥/円 10
-Year: 2005
-Mass: 4.8 g
-Diameter: 22.6 mm
-Cu 75\%, Ni 25\%
-Sakura blossoms
-Y\#287, JNDA\#02-4
+10 Won
+2012
+1.22 g
+\diameter18 mm
+Copper clad aluminum (Al 52\%, Cu 48\%)
+Dabotap Pagoda
+KM\# 103, Schön\# 163
+
+50 Won
+2010
+4.16 g
+\diameter21.60 mm
+Nickel Brass (Cu 70\%, Zn 18\%, Ni 12\%)
+Rice plant
+KM\# 34, Schön\# 80
+
+100 Won
+2011
+5.42 g
+\diameter24 mm
+Copper-nickel (Cu 75\%, Ni 25\%)
+Admiral Yi Sun-sin
+KM\# 35, Schön\# 81
+
+500 Won
+2011
+7.7 g
+\diameter26.5 mm
+Copper-nickel (Cu 75\%, Ni 25\%)
+Flying Manchurian crane
+KM\# 27, Schön\# 82
+
+Sangpyeong Tongbo
+Exonumia (replica)
+Nominal: 1 mun (문)
+1678-1892
+4\pm1 g
+\diameter27 mm
+Copper, Bronze, or Brass
+Inscription: 常平通寶
+"Ever-Normal Circulating Coin"
 

@@ -1,3 +1,4 @@
+% South Korea
 1 Won
 1983
 0.729 g
@@ -64,6 +65,7 @@ Brass
 Issued by Korea Tourism Organization
 Exonumia
 
+% North Korea
 100 Won
 2005
 2.27 g
@@ -82,6 +84,90 @@ National Coat of Arms
 Second Won (1959-2009)
 KM\# 9
 
+% Russia
+1 Ruble
+2009
+3 g
+\diameter20.5 mm
+Nickel plated steel
+Bank of Russia Emblem
+Y\# 833a, Schön\# 700a
+
+2 Ruble
+2007
+5.1 g
+\diameter23 mm
+Nickel brass
+Bank of Russia Emblem
+Y\# 834, Schön\# 701
+
+2 Ruble
+2014
+5 g
+\diameter23 mm
+Nickel plated steel
+Bank of Russia Emblem
+Y\# 834a, Schön\# 701a
+
+5 Ruble
+2020
+6 g
+\diameter25 mm
+Nickel plated steel
+National Coat of Arms
+Y\# 1706
+
+10 Ruble
+2012
+5.63 g
+\diameter22 mm
+Brass plated steel
+Bank of Russia Emblem
+Y\# 998, Schön\# 1077
+
+10 Ruble, Commem.
+2017
+7.9 g
+\diameter27 mm
+Nickel plated steel center
+Brass plated steel ring
+Ulyanovsk Emblem
+CBR\# 5714-0057
+Y\# 1775
+
+1 Kopeck
+2006
+1.50 g
+\diameter15.50 mm
+Copper-nickel clad steel
+Saint George the Warrior
+Y\# 600, Schön\# 562
+
+5 Kopeck
+2008
+2.6 g
+\diameter18.5 mm
+Copper-nickel clad steel
+Saint George the Warrior
+Y\# 601, Schön\# 563
+
+10 Kopeck
+2010
+1.85 g
+\diameter17.5 mm
+Brass clad steel
+Saint George the Warrior
+Y\# 602a
+
+50 Kopeck
+2014
+2.75 g
+\diameter19.5 mm
+Brass clad steel
+Saint George the Warrior
+Y\# 603a, Schön\# 565a
+
+% Japan
 100 Yen
 2005
 4.8 g

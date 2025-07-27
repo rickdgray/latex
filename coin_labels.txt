@@ -168,11 +168,35 @@ Saint George the Warrior
 Y\# 603a, Schön\# 565a
 
 % Japan
+500 Yen
+2001
+7 g
+\diameter26.5 mm
+Nickel Brass (Cu 72\%, Zn 20\%, Ni 8\%)
+Paulownia plant
+Y\# 125, JNDA\# 02-1A, Schön\# 102
+
 100 Yen
-2005
+1997
 4.8 g
 \diameter22.6 mm
-Cu 75\%, Ni 25\%
-Sakura blossoms
-Y\# 287, JNDA\# 02-4
+Copper-nickel (Cu 75\%, Ni 25\%)
+Cherry blossoms
+Y\# 98, JNDA\# 02-4, Schön\# 76
+
+50 Yen
+1989
+4 g
+\diameter21 mm
+Copper-nickel (Cu 75\%, Ni 25\%)
+Chrysanthemum flowers
+Y\# 101, JNDA\# 02-7, Schön\# 75
+
+10 Yen
+2011
+4.5 g
+\diameter23.5 mm
+Bronze (Cu 95\%, Zn 3.5\%, Sn 1.5\%)
+Phoenix Hall
+Y\# 97, JNDA\# 02-9, Schön\# 74
 

@@ -257,7 +257,7 @@ KM\# 344, Schön\# 325
 \diameter23.88 mm
 Nickel plated steel
 Queen Elizabeth II, caribou
-KM\# 493, 2296 Schön\# 521
+KM\# 493, 2296, Schön\# 521
 
 25 Cents, Commem.
 2008
@@ -265,7 +265,7 @@ KM\# 493, 2296 Schön\# 521
 \diameter23.88 mm
 Nickel plated steel
 Queen Elizabeth II, snowboarder
-KM\# 768 Schön\# 749.1
+KM\# 768, Schön\# 749.1
 
 25 Cents
 2023
@@ -274,4 +274,30 @@ KM\# 768 Schön\# 749.1
 Nickel plated steel
 King Charles III, caribou
 KM\# 3337, 3419
+
+10 Cents
+2016
+1.75 g
+\diameter18.03 mm
+Nickel plated steel (steel 92\%, Cu 5.5\%, Ni 2.5\%)
+Queen Elizabeth II, The Bluenose (schooner)
+KM\# 492, 2294, Schön\# 520
+
+5 Cents
+2015
+3.95 g
+\diameter21.2 mm
+Nickel plated steel (steel 94.5\%, Cu 3.5\%, Ni 2\%)
+Queen Elizabeth II, beaver
+KM\# 491, 2292, Schön\# 519a
+
+% Peru
+5 Soles
+2021
+6.67 g
+\diameter24.38 mm
+Brass center
+Stainless steel ring
+Coat of arms, Nazca Lines Condor
+KM\# 402
 

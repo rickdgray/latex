@@ -29,19 +29,20 @@
 \setlength\tabcolsep{0pt}
 
 \genericlabel{
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l l l l l p{6cm}}
-    Spec & Speed & Speed Name & AKA & Type-C Support & Notes \\
+    \scriptsize
+    \begin{tabular}{p{0.8cm} p{1.2cm} p{1.8cm} p{1cm} p{2.7cm}}
+    Spec & Speed & AKA & Type-C & Notes \\
     \hline
-    USB 1.0 & 1.5 Mbps & Low Speed &  & No Support & Obsolete, very rare \\
-    USB 1.1 & 12 Mbps & Full Speed &  & No Support &  \\
-    USB 2.0 & 480 Mbps & Hi-Speed &  & Supported & Typical cheap USB cord \\
-    USB 3.0 & 5 Gbps & SuperSpeed & 3.X Gen 1 & Supported & Blue plastic tabs often used \\
-    USB 3.1 & 10 Gbps & SuperSpeed+ & 3.X Gen 2 & Supported &  \\
-    USB 3.2 & 20 Gbps &  & 3.2 Gen 2x2 & Type-C only & Uses 2 lanes of 10 Gbps each \\
-    TB3 & 40 Gbps &  &  & Type-C only & Proprietary superset spec; includes USB \\
-    USB4 v1.0 & 20/40 Gbps &  & TB4 & Type-C only & Based on TB3 so includes DP, PCIe, etc. \\
-    USB4 v2.0 & 80/120 Gbps &  & TB5 & Type-C only &  \\
-    \end{tabular*}
+    \rule{0pt}{3ex} 1.0   & 1.5M    & Low Speed             & No   & Obsolete, very rare                      \\
+    \rule{0pt}{3ex} 1.1   & 12M     & Full Speed            & No   &                                          \\
+    \rule{0pt}{3ex} 2.0   & 480M    & Hi-Speed              & Yes  & Typical cheap USB cord                   \\
+    \rule{0pt}{3ex} 3.0   & 5G      & SuperSpeed 3.X Gen 1  & Yes  & Blue plastic tabs often used             \\
+    \rule{0pt}{3ex} 3.1   & 10G     & SuperSpeed+ 3.X Gen 2 & Yes  &                                          \\
+    \rule{0pt}{3ex} 3.2   & 20G     & 3.2 Gen 2x2           & Only & Uses 2 lanes of 10 Gbps each             \\
+    \rule{0pt}{3ex} TB3   & 40G     &                       & Only & Proprietary superset spec; includes USB  \\
+    \rule{0pt}{3ex} 4 1.0 & 20/40G  & TB4                   & Only & Based on TB3 so includes DP, PCIe, etc.  \\
+    \rule{0pt}{3ex} 4 2.0 & 80/120G & TB5                   & Only &                                          \\
+    \end{tabular}
 }
 
 \end{document}

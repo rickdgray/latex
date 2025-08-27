@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[landscape]{geometry}
+\usepackage[newdimens]{labels}
+
+\numberoflabels=9
+
+\LabelGridtrue
+
+% 55 x 85
+
+\LabelCols=3
+\LabelRows=3
+
+\LeftPageMargin=18mm
+\RightPageMargin=18mm
+\TopPageMargin=8mm
+\BottomPageMargin=8mm
+
+\InterLabelColumn=2mm
+\InterLabelRow=2mm
+
+\LeftLabelBorder=1mm
+\RightLabelBorder=1mm
+\TopLabelBorder=0mm
+\BottomLabelBorder=0mm
+
+\begin{document}
+
+\setlength\tabcolsep{0pt}
+
+\genericlabel{
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l l l l l p{6cm}}
+    Spec & Speed & Speed Name & AKA & Type-C Support & Notes \\
+    \hline
+    USB 1.0 & 1.5 Mbps & Low Speed &  & No Support & Obsolete, very rare \\
+    USB 1.1 & 12 Mbps & Full Speed &  & No Support &  \\
+    USB 2.0 & 480 Mbps & Hi-Speed &  & Supported & Typical cheap USB cord \\
+    USB 3.0 & 5 Gbps & SuperSpeed & 3.X Gen 1 & Supported & Blue plastic tabs often used \\
+    USB 3.1 & 10 Gbps & SuperSpeed+ & 3.X Gen 2 & Supported &  \\
+    USB 3.2 & 20 Gbps &  & 3.2 Gen 2x2 & Type-C only & Uses 2 lanes of 10 Gbps each \\
+    TB3 & 40 Gbps &  &  & Type-C only & Proprietary superset spec; includes USB \\
+    USB4 v1.0 & 20/40 Gbps &  & TB4 & Type-C only & Based on TB3 so includes DP, PCIe, etc. \\
+    USB4 v2.0 & 80/120 Gbps &  & TB5 & Type-C only &  \\
+    \end{tabular*}
+}
+
+\end{document}

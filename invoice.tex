@@ -7,12 +7,29 @@
 
 \begin{document}
 
-\begin{tabularx}{\textwidth}{l X l}
-   \hspace{-8pt} \multirow{4}{*}{\includegraphics[height=1.7cm]{logo.png}} & \textbf{Invicta Software} & \multirow{4}{*}{\begin{tabular}{r}\footnotesize\bf INVOICE \\[-0.4ex] \footnotesize\bf DATE \\[-0.8ex] \footnotesize \MakeUppercase{\today} \\[-0.4ex] \footnotesize\bf DUE \\[-0.8ex] \footnotesize UPON RECEIPT OF SERVICES \end{tabular}}\hspace{-6pt} \\
-   & Rick Gray & \\
-   & +1-346-307-5161 & \\
-   & rick.gray@invicta.software & \\
-\end{tabularx} 
+\begin{tabularx}{\textwidth}{@{} l X r @{}}
+    % logo
+    \includegraphics[height=1.7cm]{logo.png}
+    &
+
+    % company info
+    \begin{tabular}[t]{@{}l@{}}
+        \textbf{Invicta Software} \\
+        Rick Gray \\
+        +1-346-307-5161 \\
+        rick.gray@invicta.software
+    \end{tabular}
+    &
+
+    % invoice details
+    \begin{tabular}[t]{@{}r@{}}
+        \footnotesize \textbf{INVOICE \#}: 12345 \\
+        [-0.6ex] \footnotesize \textbf{DATE} \\
+        [-0.6ex] \footnotesize \MakeUppercase{\today} \\
+        [-0.6ex] \footnotesize \textbf{DUE} \\
+        [-0.6ex] \footnotesize UPON RECEIPT OF SERVICES
+    \end{tabular}
+\end{tabularx}
 
 \vspace{1cm}
 

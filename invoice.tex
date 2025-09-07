@@ -1,5 +1,5 @@
 \documentclass{letter}
-\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{multirow}
@@ -15,18 +15,18 @@
     % company info
     \begin{tabular}[t]{@{}l@{}}
         \textbf{Invicta Software} \\
-        Rick Gray \\
-        +1-346-307-5161 \\
+        Rick Gray                 \\
+        +1-346-307-5161           \\
         rick.gray@invicta.software
     \end{tabular}
     &
 
     % invoice details
     \begin{tabular}[t]{@{}r@{}}
-        \footnotesize \textbf{INVOICE \#}: 12345 \\
-        [-0.6ex] \footnotesize \textbf{DATE} \\
-        [-0.6ex] \footnotesize \MakeUppercase{\today} \\
-        [-0.6ex] \footnotesize \textbf{DUE} \\
+                 \footnotesize \textbf{INVOICE \#}: 12345 \\
+        [-0.6ex] \footnotesize \textbf{DATE}              \\
+        [-0.6ex] \footnotesize \MakeUppercase{\today}     \\
+        [-0.6ex] \footnotesize \textbf{DUE}               \\
         [-0.6ex] \footnotesize UPON RECEIPT OF SERVICES
     \end{tabular}
 \end{tabularx}
@@ -41,13 +41,13 @@ BILL TO
     \hhline{----}
     \rule{0pt}{5ex} \bf{Service}          & \bf{Rate}                                & \bf{Quantity} & \bf Payment due \\
     \hhline{----}
-    \rule{0pt}{5ex} Website Dev and Admin & \$125.00/hr                              & 20            & \$2500.00 \\
+    \rule{0pt}{5ex} Website Dev and Admin & \$125.00/hr                              & 20            & \$2500.00       \\
     \hhline{----}
-    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Total}                            & \$2500.00 \\
+    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Total}                            & \$2500.00       \\
     \hhline{~---}
-    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Payment received}                 & \$0.00 \\
+    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Payment received}                 & \$0.00          \\
     \hhline{~---}
-    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Balance due}                      & \$2500.00 \\
+    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Balance due}                      & \$2500.00       \\
     \hhline{~===}
 \end{tabularx}
 

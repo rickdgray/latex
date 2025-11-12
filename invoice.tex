@@ -1,0 +1,54 @@
+\documentclass{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{hhline}
+
+\begin{document}
+
+\begin{tabularx}{\textwidth}{@{} l X r @{}}
+    % logo
+    \parbox[t]{1.7cm}{\vspace{-9pt}\includegraphics[height=1.7cm]{logo.png}}
+    &
+
+    % company info
+    \begin{tabular}[t]{@{}l@{}}
+        \textbf{Invicta Software} \\
+        Rick Gray                 \\
+        +1-346-307-5161           \\
+        rick.gray@invicta.software
+    \end{tabular}
+    &
+
+    % invoice details
+    \begin{tabular}[t]{@{}r@{}}
+                 \footnotesize \textbf{INVOICE \#}: 00002 \\
+        [-0.6ex] \footnotesize \textbf{DATE}              \\
+        [-0.6ex] \footnotesize \MakeUppercase{\today}     \\
+        [-0.6ex] \footnotesize \textbf{DUE}               \\
+        [-0.6ex] \footnotesize 30 DAYS UPON RECEIPT OF INVOICE
+    \end{tabular}
+\end{tabularx}
+
+\vspace{1cm}
+
+BILL TO
+
+\Large\textbf{Whiskers \& Tails Rescue}\normalsize
+
+\begin{tabularx}{\linewidth}{p{8.5cm} X X r}
+    \hhline{----}
+    \rule{0pt}{5ex} \bf{Service}          & \bf{Rate}                                & \bf{Quantity} & \bf Payment due \\
+    \hhline{----}
+    \rule{0pt}{5ex} Website Dev and Admin & \$125.00/hr                              & 20            & \$2500.00       \\
+    \hhline{----}
+    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Total}                            & \$2500.00       \\
+    \hhline{~---}
+    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Payment received}                 & \$0.00          \\
+    \hhline{~---}
+    \rule{0pt}{5ex}                       & \multicolumn{2}{l}{\bf Balance due}                      & \$2500.00       \\
+    \hhline{~===}
+\end{tabularx}
+
+\end{document}

@@ -15,8 +15,13 @@
 % Section formatting
 \titleformat{\section}
   {\Large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
 \titleformat{\subsection}
   {\large\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+% Reduce list spacing
+\setlist{nosep, leftmargin=*, itemsep=0pt, parsep=0pt, topsep=2pt}
 
 % Remove section numbering
 \setcounter{secnumdepth}{0}

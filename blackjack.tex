@@ -1,0 +1,89 @@
+\documentclass[letterpaper]{article}
+\usepackage[newdimens]{labels}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+
+\renewcommand{\normalsize}{\fontsize{5pt}{6pt}\selectfont}
+\renewcommand{\small}{\fontsize{5pt}{6pt}\selectfont}
+\renewcommand{\large}{\fontsize{5pt}{6pt}\selectfont}
+\renewcommand{\footnotesize}{\fontsize{5pt}{6pt}\selectfont}
+\setlength{\extrarowheight}{1pt}
+
+\numberoflabels=9
+\LabelGridtrue
+% 8.5 x 11 => 216 x 280 mm
+% 48 x 80 mm cards
+% 3*48 + 2*2 = 216 - side margins
+% 3*80 + 2*2 = 280 - top/bottom margins
+\LabelCols=3
+\LabelRows=3
+\LeftPageMargin=34mm
+\RightPageMargin=34mm
+\TopPageMargin=18mm
+\BottomPageMargin=18mm
+\InterLabelColumn=2mm
+\InterLabelRow=2mm
+\LeftLabelBorder=1mm
+\RightLabelBorder=1mm
+\TopLabelBorder=0mm
+\BottomLabelBorder=0mm
+
+% Compact tables
+\setlength\tabcolsep{1.1pt}
+\renewcommand{\arraystretch}{0.92}
+
+% Column type for very tight labels
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Define colors for double and surrender
+\definecolor{doubleblue}{RGB}{173,216,230}
+\definecolor{surrenderred}{RGB}{255,200,200}
+
+\begin{document}
+\genericlabel{
+    \begin{minipage}[t][78mm][t]{46mm}
+    \textbf{Blackjack Basic Strategy}\\
+    \textit{4+ Decks, H17, DAS, with Surrender}\par
+
+    \begin{tabular}{C{2mm}|C{6mm}|C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}}
+        & & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
+        \multirow{11}{*}{\rotatebox{90}{Hard}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
+        & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
+        & 11    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H \\
+        & 12    & H & H &  &  &  & H & H & H & H & H \\
+        & 13    &  &  &  &  &  & H & H & H & H & H \\
+        & 14    &  &  &  &  &  & H & H & H & H & H \\
+        & 15    &  &  &  &  &  & H & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
+        & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
+        & 17    &  &  &  &  &  &  &  &  &  & \cellcolor{surrenderred} \\
+        & 18+   &  &  &  &  &  &  &  &  &  &  \\ \hline
+        \multirow{8}{*}{\rotatebox{90}{Soft}} & A2   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & A3   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & A4   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & A5   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & A6   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & A7   & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
+        & A8   &  &  &  &  & \cellcolor{doubleblue} &  &  &  &  &  \\
+        & A9+   &  &  &  &  &  &  &  &  &  &  \\ \hline
+        \multirow{10}{*}{\rotatebox{90}{Pairs}} & 22   & S & S & S & S & S & S & H & H & H & H \\
+        & 33   & S & S & S & S & S & S & H & H & H & H \\
+        & 44   & H & H & H & S & S & H & H & H & H & H \\
+        & 55   & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
+        & 66   & S & S & S & S & S & H & H & H & H & H \\
+        & 77   & S & S & S & S & S & S & H & H & H & H \\
+        & 88   & S & S & S & S & S & S & S & S & S & \cellcolor{surrenderred}S \\
+        & 99   & S & S & S & S & S &  & S & S &  &  \\
+        & TT   &  &  &  &  &  &  &  &  &  &  \\
+        & AA   & S & S & S & S & S & S & S & S & S & S \\
+    \end{tabular}
+
+    \textbf{Key:} H=Hit,\; S=Split,\\
+    \colorbox{doubleblue}{X}=Double,\; \colorbox{surrenderred}{X}=Surrender \textit{if allowed}
+    \end{minipage}
+}
+\end{document}

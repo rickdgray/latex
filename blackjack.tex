@@ -5,6 +5,7 @@
 \usepackage{array}
 \usepackage[table]{xcolor}
 \usepackage{graphicx}
+\usepackage{tikz}
 
 \renewcommand{\normalsize}{\fontsize{5pt}{6pt}\selectfont}
 \renewcommand{\small}{\fontsize{5pt}{6pt}\selectfont}
@@ -42,15 +43,22 @@
 % Define colors for double and surrender
 \definecolor{doubleblue}{RGB}{173,216,230}
 \definecolor{surrenderred}{RGB}{255,200,200}
+\definecolor{cornergreen}{RGB}{34,139,34}
 
 \begin{document}
 \genericlabel{
-    \begin{minipage}[t][78mm][t]{46mm}
-    \textbf{Blackjack Basic Strategy}\\
-    \textit{4+ Decks, H17, DAS, with Surrender}\par
+    \begin{minipage}[t][81mm][t]{49.5mm}
+    \begin{tikzpicture}[remember picture, overlay]
+        \begin{scope}[shift={(43.5mm,-4mm)}]
+            \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
+            \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
+                {\fontsize{3pt}{3pt}\selectfont\textbf{\textcolor{white}{H17}}};
+        \end{scope}
+    \end{tikzpicture}
+    \textbf{Blackjack Basic Strategy}
 
-    \begin{tabular}{C{1.7mm}|C{6mm}|C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}}
-        & & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
+    \begin{tabular}{C{2.4mm}|C{6.4mm}|C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}}
+        \multicolumn{2}{c|}{} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
         \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
         & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
         & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
@@ -62,7 +70,7 @@
         & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
         & 17    &  &  &  &  &  &  &  &  &  & \cellcolor{surrenderred} \\
         & 18+   &  &  &  &  &  &  &  &  &  &  \\ \hline
-        \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13 & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
         & 14   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
         & 15   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
         & 16   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
@@ -90,12 +98,18 @@
 \pagebreak
 
 \genericlabel{
-    \begin{minipage}[t][78mm][t]{46mm}
-    \textbf{Blackjack Basic Strategy}\\
-    \textit{4+ Decks, S17, DAS, with Surrender}\par
+    \begin{minipage}[t][81mm][t]{49.5mm}
+    \begin{tikzpicture}[remember picture, overlay]
+        \begin{scope}[shift={(43.5mm,-4mm)}]
+            \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
+            \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
+                {\fontsize{3pt}{3pt}\selectfont\textbf{\textcolor{white}{S17}}};
+        \end{scope}
+    \end{tikzpicture}
+    \textbf{Blackjack Basic Strategy}
 
-    \begin{tabular}{C{1.7mm}|C{6mm}|C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}}
-        & & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
+    \begin{tabular}{C{2.4mm}|C{6.4mm}|C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}}
+        \multicolumn{2}{c|}{} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
         \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
         & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
         & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\

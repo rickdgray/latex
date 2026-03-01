@@ -15,15 +15,15 @@
 \numberoflabels=9
 \LabelGridtrue
 % 8.5 x 11 => 216 x 280 mm
-% 48 x 80 mm cards
-% 3*48 + 2*2 = 216 - side margins
-% 3*80 + 2*2 = 280 - top/bottom margins
+% 51.5 x 83 mm cards
+% 3*51.5 + 2*2 = 216 - side margins
+% 3*83 + 2*2 = 280 - top/bottom margins
 \LabelCols=3
 \LabelRows=3
-\LeftPageMargin=34mm
-\RightPageMargin=34mm
-\TopPageMargin=18mm
-\BottomPageMargin=18mm
+\LeftPageMargin=29mm
+\RightPageMargin=29mm
+\TopPageMargin=14mm
+\BottomPageMargin=13mm
 \InterLabelColumn=2mm
 \InterLabelRow=2mm
 \LeftLabelBorder=1mm
@@ -51,7 +51,7 @@
 
     \begin{tabular}{C{1.7mm}|C{6mm}|C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}}
         & & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
-        \multirow{11}{*}{\rotatebox{90}{Hard}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
+        \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
         & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
         & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
         & 11    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H \\
@@ -62,14 +62,14 @@
         & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
         & 17    &  &  &  &  &  &  &  &  &  & \cellcolor{surrenderred} \\
         & 18+   &  &  &  &  &  &  &  &  &  &  \\ \hline
-        \multirow{8}{*}{\rotatebox{90}{Soft}} & A2   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A3   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A4   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A5   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A6   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A7   & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
-        & A8   &  &  &  &  & \cellcolor{doubleblue} &  &  &  &  &  \\
-        & A9+   &  &  &  &  &  &  &  &  &  &  \\ \hline
+        \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 14   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 15   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 16   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 17   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 18   & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
+        & 19   &  &  &  &  & \cellcolor{doubleblue} &  &  &  &  &  \\
+        & 20+   &  &  &  &  &  &  &  &  &  &  \\ \hline
         \multirow{10}{*}{\rotatebox{90}{Pairs}} & 22   & S & S & S & S & S & S & H & H & H & H \\
         & 33   & S & S & S & S & S & S & H & H & H & H \\
         & 44   & H & H & H & S & S & H & H & H & H & H \\
@@ -82,7 +82,7 @@
         & AA   & S & S & S & S & S & S & S & S & S & S \\
     \end{tabular}
 
-    \textbf{Key:} H=Hit,\; S=Split,\\
+    \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
     \colorbox{doubleblue}{X}=Double,\; \colorbox{surrenderred}{X}=Surrender \textit{if allowed}
     \end{minipage}
 }
@@ -96,7 +96,7 @@
 
     \begin{tabular}{C{1.7mm}|C{6mm}|C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}C{2.7mm}}
         & & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
-        \multirow{11}{*}{\rotatebox{90}{Hard}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
+        \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
         & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
         & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
         & 11    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H \\
@@ -107,14 +107,14 @@
         & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
         & 17    &  &  &  &  &  &  &  &  &  &  \\
         & 18+   &  &  &  &  &  &  &  &  &  &  \\ \hline
-        \multirow{8}{*}{\rotatebox{90}{Soft}} & A2   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A3   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A4   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A5   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A6   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & A7   &  & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
-        & A8   &  &  &  &  &  &  &  &  &  &  \\
-        & A9+  &  &  &  &  &  &  &  &  &  &  \\ \hline
+        \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 14   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 15   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 16   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 17   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+        & 18   &  & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
+        & 19   &  &  &  &  &  &  &  &  &  &  \\
+        & 20+  &  &  &  &  &  &  &  &  &  &  \\ \hline
         \multirow{10}{*}{\rotatebox{90}{Pairs}} & 22   & S & S & S & S & S & S & H & H & H & H \\
         & 33   & S & S & S & S & S & S & H & H & H & H \\
         & 44   & H & H & H & S & S & H & H & H & H & H \\
@@ -127,7 +127,7 @@
         & AA   & S & S & S & S & S & S & S & S & S & S \\
     \end{tabular}
 
-    \textbf{Key:} H=Hit,\; S=Split,\\
+    \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
     \colorbox{doubleblue}{X}=Double,\; \colorbox{surrenderred}{X}=Surrender \textit{if allowed}
     \end{minipage}
 }

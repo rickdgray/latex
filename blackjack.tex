@@ -43,7 +43,7 @@
 % Define colors for double and surrender
 \definecolor{doubleblue}{RGB}{173,216,230}
 \definecolor{surrenderred}{RGB}{255,200,200}
-\definecolor{cornergreen}{RGB}{34,139,34}
+\definecolor{cornergreen}{RGB}{128,128,128}
 
 \begin{document}
 \genericlabel{
@@ -91,7 +91,14 @@
     \end{tabular}
 
     \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
-    \colorbox{doubleblue}{X}=Double,\; \colorbox{surrenderred}{X}=Surrender \textit{if allowed}
+    {
+        \setlength{\fboxsep}{2pt}
+        \colorbox{doubleblue}{\phantom{I}}=Double \textit{if allowed}, 
+        \colorbox{surrenderred}{\phantom{I}}=Surrender \textit{if allowed}
+    }\\
+    \textbf{House edge:} 0.66\%. A \textdollar\(20\) bet costs \(13.2\)\textcent.\\
+    \textbf{Bet size:} Bankroll\(\div74\) for 95\% chance\\
+    to play 8 hours. Bankroll\(\div50\) for 4 hours.
     \end{minipage}
 }
 
@@ -142,7 +149,14 @@
     \end{tabular}
 
     \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
-    \colorbox{doubleblue}{X}=Double,\; \colorbox{surrenderred}{X}=Surrender \textit{if allowed}
+    {
+        \setlength{\fboxsep}{2pt}
+        \colorbox{doubleblue}{\phantom{I}}=Double \textit{if allowed}, 
+        \colorbox{surrenderred}{\phantom{I}}=Surrender \textit{if allowed}
+    }\\
+    \textbf{House edge:} 0.44\%. A \textdollar\(20\) bet costs \(8.8\)\textcent.\\
+    \textbf{Bet size:} Bankroll\(\div70\) for 95\% chance\\
+    to play 8 hours. Bankroll\(\div49\) for 4 hours.
     \end{minipage}
 }
 \end{document}

@@ -48,57 +48,56 @@
 \begin{document}
 \genericlabel{
     \begin{minipage}[t][81mm][t]{49.5mm}
-    \begin{tikzpicture}[remember picture, overlay]
-        \begin{scope}[shift={(43.5mm,-4mm)}]
-            \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
-            \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
-                {\fontsize{3pt}{3pt}\selectfont\textbf{\textcolor{white}{H17}}};
-        \end{scope}
-    \end{tikzpicture}
-    \textbf{Blackjack Basic Strategy}
+        \begin{tikzpicture}[remember picture, overlay]
+            \begin{scope}[shift={(43.5mm,-4mm)}]
+                \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
+                \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
+                    {\selectfont\textbf{\textcolor{white}{H17}}};
+            \end{scope}
+        \end{tikzpicture}
+        \textbf{Blackjack Basic Strategy}
 
-    \begin{tabular}{C{2.4mm}|C{6.4mm}|C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}}
-        \multicolumn{2}{c|}{} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
-        \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
-        & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
-        & 11    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H \\
-        & 12    & H & H &  &  &  & H & H & H & H & H \\
-        & 13    &  &  &  &  &  & H & H & H & H & H \\
-        & 14    &  &  &  &  &  & H & H & H & H & H \\
-        & 15    &  &  &  &  &  & H & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
-        & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
-        & 17    &  &  &  &  &  &  &  &  &  & \cellcolor{surrenderred} \\
-        & 18+   &  &  &  &  &  &  &  &  &  &  \\ \hline
-        \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13 & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 14   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 15   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 16   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 17   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 18   & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
-        & 19   &  &  &  &  & \cellcolor{doubleblue} &  &  &  &  &  \\
-        & 20+   &  &  &  &  &  &  &  &  &  &  \\ \hline
-        \multirow{10}{*}{\rotatebox{90}{Pairs}} & 22   & S & S & S & S & S & S & H & H & H & H \\
-        & 33   & S & S & S & S & S & S & H & H & H & H \\
-        & 44   & H & H & H & S & S & H & H & H & H & H \\
-        & 55   & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
-        & 66   & S & S & S & S & S & H & H & H & H & H \\
-        & 77   & S & S & S & S & S & S & H & H & H & H \\
-        & 88   & S & S & S & S & S & S & S & S & S & \cellcolor{surrenderred}S \\
-        & 99   & S & S & S & S & S &  & S & S &  &  \\
-        & TT   &  &  &  &  &  &  &  &  &  &  \\
-        & AA   & S & S & S & S & S & S & S & S & S & S \\
-    \end{tabular}
+        \begin{tabular}{C{2.4mm}|C{6.4mm}|C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}}
+            \multicolumn{2}{c|}{} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
+            \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
+            & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
+            & 11    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H \\
+            & 12    & H & H &  &  &  & H & H & H & H & H \\
+            & 13    &  &  &  &  &  & H & H & H & H & H \\
+            & 14    &  &  &  &  &  & H & H & H & H & H \\
+            & 15    &  &  &  &  &  & H & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
+            & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
+            & 17    &  &  &  &  &  &  &  &  &  & \cellcolor{surrenderred} \\ \hline
+            \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13 & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 14   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 15   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 16   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 17   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 18   & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
+            & 19   &  &  &  &  & \cellcolor{doubleblue} &  &  &  &  &  \\ \hline
+            \multirow{10}{*}{\rotatebox{90}{Pairs}} & 22   & S & S & S & S & S & S & H & H & H & H \\
+            & 33   & S & S & S & S & S & S & H & H & H & H \\
+            & 44   & H & H & H & S & S & H & H & H & H & H \\
+            & 55   & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
+            & 66   & S & S & S & S & S & H & H & H & H & H \\
+            & 77   & S & S & S & S & S & S & H & H & H & H \\
+            & 88   & S & S & S & S & S & S & S & S & S & \cellcolor{surrenderred}S \\
+            & 99   & S & S & S & S & S &  & S & S &  &  \\
+            & TT   &  &  &  &  &  &  &  &  &  &  \\
+            & AA   & S & S & S & S & S & S & S & S & S & S \\
+        \end{tabular}\\
 
-    \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
-    {
-        \setlength{\fboxsep}{2pt}
-        \colorbox{doubleblue}{\phantom{I}}=Double \textit{if allowed}, 
-        \colorbox{surrenderred}{\phantom{I}}=Surrender \textit{if allowed}
-    }\\
-    \textbf{House edge:} 0.66\%. A \textdollar\(20\) bet costs \(13.2\)\textcent.\\
-    \textbf{Bet size:} Bankroll\(\div74\) for 95\% chance\\
-    to play 8 hours. Bankroll\(\div50\) for 4 hours.
+        \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
+        {
+            \setlength{\fboxsep}{2pt}
+            \colorbox{doubleblue}{\phantom{I}}=Double \textit{if allowed}, 
+            \colorbox{surrenderred}{\phantom{I}}=Surrender \textit{if allowed}
+        }\\
+        \textbf{House edge:} 0.66\%. A \textdollar\(20\) bet costs \(13.2\)\textcent.\\
+        \textbf{Bet size:} Bankroll\(\div74\) for 95\% chance\\
+        to play 8 hours. Bankroll\(\div50\) for 4 hours.\\
+        \textbf{Never take the insurance!}
     \end{minipage}
 }
 
@@ -106,57 +105,56 @@
 
 \genericlabel{
     \begin{minipage}[t][81mm][t]{49.5mm}
-    \begin{tikzpicture}[remember picture, overlay]
-        \begin{scope}[shift={(43.5mm,-4mm)}]
-            \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
-            \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
-                {\fontsize{3pt}{3pt}\selectfont\textbf{\textcolor{white}{S17}}};
-        \end{scope}
-    \end{tikzpicture}
-    \textbf{Blackjack Basic Strategy}
+        \begin{tikzpicture}[remember picture, overlay]
+            \begin{scope}[shift={(43.5mm,-4mm)}]
+                \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
+                \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
+                    {\fontsize{3pt}{3pt}\selectfont\textbf{\textcolor{white}{S17}}};
+            \end{scope}
+        \end{tikzpicture}
+        \textbf{Blackjack Basic Strategy}
 
-    \begin{tabular}{C{2.4mm}|C{6.4mm}|C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}}
-        \multicolumn{2}{c|}{} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
-        \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
-        & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
-        & 11    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H \\
-        & 12    & H & H &  &  &  & H & H & H & H & H \\
-        & 13    &  &  &  &  &  & H & H & H & H & H \\
-        & 14    &  &  &  &  &  & H & H & H & H & H \\
-        & 15    &  &  &  &  &  & H & H & H & \cellcolor{surrenderred}H & H \\
-        & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
-        & 17    &  &  &  &  &  &  &  &  &  &  \\
-        & 18+   &  &  &  &  &  &  &  &  &  &  \\ \hline
-        \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 14   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 15   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 16   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 17   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
-        & 18   &  & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
-        & 19   &  &  &  &  &  &  &  &  &  &  \\
-        & 20+  &  &  &  &  &  &  &  &  &  &  \\ \hline
-        \multirow{10}{*}{\rotatebox{90}{Pairs}} & 22   & S & S & S & S & S & S & H & H & H & H \\
-        & 33   & S & S & S & S & S & S & H & H & H & H \\
-        & 44   & H & H & H & S & S & H & H & H & H & H \\
-        & 55   & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
-        & 66   & S & S & S & S & S & H & H & H & H & H \\
-        & 77   & S & S & S & S & S & S & H & H & H & H \\
-        & 88   & S & S & S & S & S & S & S & S & S & S \\
-        & 99   & S & S & S & S & S &  & S & S &  &  \\
-        & TT   &  &  &  &  &  &  &  &  &  &  \\
-        & AA   & S & S & S & S & S & S & S & S & S & S \\
-    \end{tabular}
+        \begin{tabular}{C{2.4mm}|C{6.4mm}|C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}C{2.9mm}}
+            \multicolumn{2}{c|}{} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & T & A \\ \hline
+            \multirow{11}{*}{\rotatebox{90}{Hard (No Ace)}} & 5--8  & H & H & H & H & H & H & H & H & H & H \\
+            & 9     & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 10    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
+            & 11    & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H \\
+            & 12    & H & H &  &  &  & H & H & H & H & H \\
+            & 13    &  &  &  &  &  & H & H & H & H & H \\
+            & 14    &  &  &  &  &  & H & H & H & H & H \\
+            & 15    &  &  &  &  &  & H & H & H & \cellcolor{surrenderred}H & H \\
+            & 16    &  &  &  &  &  & H & H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H & \cellcolor{surrenderred}H \\
+            & 17    &  &  &  &  &  &  &  &  &  &  \\ \hline
+            \multirow{8}{*}{\rotatebox{90}{Soft (Ace)}} & 13   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 14   & H & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 15   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 16   & H & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 17   & H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H & H & H & H \\
+            & 18   &  & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} & \cellcolor{doubleblue} &  &  & H & H & H \\
+            & 19   &  &  &  &  &  &  &  &  &  &  \\ \hline
+            \multirow{10}{*}{\rotatebox{90}{Pairs}} & 22   & S & S & S & S & S & S & H & H & H & H \\
+            & 33   & S & S & S & S & S & S & H & H & H & H \\
+            & 44   & H & H & H & S & S & H & H & H & H & H \\
+            & 55   & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & \cellcolor{doubleblue}H & H & H \\
+            & 66   & S & S & S & S & S & H & H & H & H & H \\
+            & 77   & S & S & S & S & S & S & H & H & H & H \\
+            & 88   & S & S & S & S & S & S & S & S & S & S \\
+            & 99   & S & S & S & S & S &  & S & S &  &  \\
+            & TT   &  &  &  &  &  &  &  &  &  &  \\
+            & AA   & S & S & S & S & S & S & S & S & S & S \\
+        \end{tabular}\\
 
-    \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
-    {
-        \setlength{\fboxsep}{2pt}
-        \colorbox{doubleblue}{\phantom{I}}=Double \textit{if allowed}, 
-        \colorbox{surrenderred}{\phantom{I}}=Surrender \textit{if allowed}
-    }\\
-    \textbf{House edge:} 0.44\%. A \textdollar\(20\) bet costs \(8.8\)\textcent.\\
-    \textbf{Bet size:} Bankroll\(\div70\) for 95\% chance\\
-    to play 8 hours. Bankroll\(\div49\) for 4 hours.
+        \textbf{Key:} H=Hit,\; S=Split,\; Blank=Stand,\\
+        {
+            \setlength{\fboxsep}{2pt}
+            \colorbox{doubleblue}{\phantom{I}}=Double \textit{if allowed}, 
+            \colorbox{surrenderred}{\phantom{I}}=Surrender \textit{if allowed}
+        }\\
+        \textbf{House edge:} 0.44\%. A \textdollar\(20\) bet costs \(8.8\)\textcent.\\
+        \textbf{Bet size:} Bankroll\(\div70\) for 95\% chance\\
+        to play 8 hours. Bankroll\(\div49\) for 4 hours.\\
+        \textbf{Never take the insurance!}
     \end{minipage}
 }
 \end{document}

@@ -43,14 +43,14 @@
 % Define colors for double and surrender
 \definecolor{doubleblue}{RGB}{173,216,230}
 \definecolor{surrenderred}{RGB}{255,200,200}
-\definecolor{cornergreen}{RGB}{128,128,128}
+\definecolor{cornergray}{RGB}{128,128,128}
 
 \begin{document}
 \genericlabel{
     \begin{minipage}[t][81mm][t]{49.5mm}
         \begin{tikzpicture}[remember picture, overlay]
             \begin{scope}[shift={(43.5mm,-4mm)}]
-                \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
+                \fill[cornergray] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
                 \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
                     {\selectfont\textbf{\textcolor{white}{H17}}};
             \end{scope}
@@ -107,7 +107,7 @@
     \begin{minipage}[t][81mm][t]{49.5mm}
         \begin{tikzpicture}[remember picture, overlay]
             \begin{scope}[shift={(43.5mm,-4mm)}]
-                \fill[cornergreen] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
+                \fill[cornergray] (0,6mm) -- (6mm,6mm) -- (6mm,0mm) -- cycle;
                 \node[anchor=center, rotate=-45] at (3.8mm,3.8mm)
                     {\fontsize{3pt}{3pt}\selectfont\textbf{\textcolor{white}{S17}}};
             \end{scope}

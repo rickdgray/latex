@@ -1,0 +1,44 @@
+% DYMO LabelWriter 450 Turbo via WSL2 (no DYMO software)
+% Label: 30252 address, 28x89mm = PageSize w79h252
+%
+% EACH SESSION
+%   PowerShell:  usbipd list
+%                usbipd attach --wsl --busid <BUSID>
+%   WSL:         sudo service cups start
+%                pdflatex label.tex && lp label.pdf
+%
+% ONE-TIME SETUP
+%   PowerShell (admin): winget install usbipd
+%                       usbipd bind --busid <BUSID>
+%   WSL: sudo apt install cups printer-driver-dymo
+%        sudo lpadmin -p dymo -E \
+%          -v 'usb://DYMO/LabelWriter%20450%20Turbo?serial=13XXXXXXXXXXXX' \
+%          -m 'dymo:0/cups/model/lw450t.ppd'
+%        lpoptions -d dymo
+%        lpoptions -p dymo -o PageSize=w79h252
+%
+% PageSize is in points and 1 pt = 1/72 inch
+% so 28mm = 79.37 pt, 89mm = 252.36 pt
+%
+% TROUBLESHOOTING
+%   Not printing?  lsusb (is DYMO attached?)  /  lpstat -p dymo
+%   Sideways/tiny: add -o landscape or -o fit-to-page to lp
+%   Each \newpage = one label
+
+\documentclass{article}
+\usepackage[paperwidth=3.5in, paperheight=1.125in, margin=0.08in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\vspace*{\fill}
+The Grays \\
+1 Hacker Wy \\
+Menlo Park, CA 94025 \par
+\vspace*{\fill}
+
+\end{document}
